@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.saee {
+  background-color:  #151719;
+  background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 15px;
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy .aass {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+  color: rgb(136, 209, 209);
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+.aass{
+    margin: 5px;
+}
+#s1,#s6,#s11{
+    font-size: 70px;
+    color: rgb(6, 20, 64);
+}
+@media (max-width:690px) {
+    .waviy{
+        font-size: 22px;
+    }
+    #s1,#s6,#s11{
+        font-size: 25px;
+        color: rgb(6, 20, 64);
+
+    }
+   
+}
+.wel{
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+  color: rgb(6, 20, 64);
+  
+
+}
+.btnopt{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.in,.out{
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(6, 20, 64);
+    background-color:  rgb(136, 209, 209);
+    cursor: pointer;
+
+}
+.in:hover ,.out:hover{
+    background-color:  rgb(97, 165, 165);
+
+}
+@media (max-width:690px) {
+    .btnopt{
+        margin-top: 40px;
+    }
+    .in,.out{
+        width: 80px;
+    }
+   
+}
+.circle1,.circle2,.circle3,.circle4{
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  /* opacity: 0.5; */
+  filter: blur(2px);
+}
+.circle1{
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  top: -5%;
+  left: 5%  ;
+  animation: an 7s linear infinite;
+
+ 
+}
+.circle2{
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  top: -5%;
+  left: 55%  ;
+  animation: an 7s linear infinite;
+  animation-delay: 1s;
+ 
+}
+.circle3{
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  top: -5%;
+  left: 30%  ;
+  animation: an 7s linear infinite;
+  animation-delay: 3s;
+ 
+}
+.circle4{
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  top: -5%;
+  left: 85%  ;
+  animation: an 7s linear infinite;
+  animation-delay: 2s;
+ 
+}
+@keyframes an {
+  from{
+    transform: translateY(-15px);
+    width: 40px;
+    height: 40px;
+  }
+  to{
+    transform: translateY(800px);
+    width: 60px;
+    height: 60px;
+  }
+}
